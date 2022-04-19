@@ -1,8 +1,8 @@
 from base.seleniumbase import SeleniumBase
 from selenium.webdriver.remote.webelement import WebElement
 from typing import List
-
 from base.utils import Utils
+
 
 
 class HomepageNavigation(SeleniumBase):
@@ -16,7 +16,6 @@ class HomepageNavigation(SeleniumBase):
     def get_nav_links(self) -> List[WebElement]:
         return self.are_visible('class', self.__nav_links, 'Header Navigation Links')
 
-
     def get_nav_links_text(self) -> str:
         nav_links = self.get_nav_links()
         nav_links_text = self.get_text_from_webelements(nav_links)
@@ -25,3 +24,7 @@ class HomepageNavigation(SeleniumBase):
     def get_nav_link_by_name(self, name) -> WebElement:
         elements = self.get_nav_links()
         return self.get_element_by_text(elements, name)
+
+
+
+
