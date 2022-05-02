@@ -19,6 +19,7 @@ class Application:
             return True
         except:
             return False
+
     def open_home_page(self):
         driver = self.driver
         url = 'https://www.yakaboo.ua/'

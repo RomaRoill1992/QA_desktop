@@ -9,4 +9,6 @@ def get_chrome_options():
     options = chrome_options()
     options.add_argument('chrome')
     options.add_argument('--start-maximized')
+    options.add_argument('--disable-notifications')
+
     return options
