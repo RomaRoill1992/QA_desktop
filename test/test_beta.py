@@ -9,8 +9,3 @@ def test_beta(app):
     time.sleep(3)
     app.driver.find_element(By.CSS_SELECTOR, ".block6 ul>li:nth-child(3)>a").click()
 
-
-
-
-
-
